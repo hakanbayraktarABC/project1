@@ -11,7 +11,6 @@ local CreditsContact = CreditsCategory:Sector("Contact")
 local CreditsAboutUs = CreditsCategory:Sector("About Us")
 
 -- Main Sectors
-
 local MainAutos = MainCategory:Sector("Auto's")
 local MainTeleport = MainCategory:Sector("Teleport")
 
@@ -39,7 +38,6 @@ local contactLabel4 = CreditsContact:Cheat("Label", "haydarpro.baba@gmail.com - 
     function() end, {})
 
 -- Credits Sectors About Us Label
-
 local aboutUsLabel1 = CreditsContact:Cheat("Label", "I am from Turkiye.",
     function() end, {})
 
@@ -51,3 +49,8 @@ local aboutUsLabel3 = CreditsContact:Cheat("Label", "I know Deutsch and English.
 
 local aboutUsLabel4 = CreditsContact:Cheat("Label", "I'll help everyone in my discord server.",
     function() end, {})
+
+-- Main Sectors Auto's Checkbox
+local autoSpam = MainCategory:Cheat("Checkbox", "Auto Spam Checkbox", function(state),
+    print(state)
+end, {})
